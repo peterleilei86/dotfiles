@@ -1,0 +1,25 @@
+[credential]
+	helper =
+	helper = store --file /opt/dev/var/private/git_credential_store
+[user]
+	name = Peter Wang
+	email = peter.wang@shopify.com
+[core]
+	commitGraph = true
+	editor = code --wait
+[diff]
+    tool = vscode
+	algorithm = patience
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[gc]
+	writeCommitGraph = true
+[protocol]
+	version = 2
+[url "https://github.com/Shopify/"]
+	insteadOf = git@github.com:Shopify/
+	insteadOf = git@github.com:shopify/
+	insteadOf = ssh://git@github.com/Shopify/
+	insteadOf = ssh://git@github.com/shopify/
+[pull]
+	rebase = true

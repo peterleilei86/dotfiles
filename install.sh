@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function fail() {
     echo ❌ Error occured. Exiting installation.
@@ -18,6 +18,7 @@ echo ➡️  Downloading Autocompletion plugin...
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || fail
 
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
 echo 🍻 Enjoy your fresh new zsh terminal! 🍻
 
