@@ -17,8 +17,15 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo ➡️  Downloading Autocompletion plugin...
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || fail
 
+echo ➡️  Downloading zsh completions plugin...
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+echo ➡️  Downloading git open plugin...
+git clone https://github.com/paulirish/git-open.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/git-open
+
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ls -sf ~/dotfiles/.config ~/.config
 
 echo 🍻 Enjoy your fresh new zsh terminal! 🍻
 
