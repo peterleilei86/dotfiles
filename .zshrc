@@ -126,7 +126,12 @@ if [ -e /Users/peterwang/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/pete
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export STARSHIP_CONFIG=~/.config/starship.toml
+if [ $SPIN ]; then
+  export STARSHIP_CONFIG=/home/spin/.config/starship.toml
+else
+  export STARSHIP_CONFIG=~/.config/starship.toml
+fi
+
 
 eval "$(starship init zsh)"
 
