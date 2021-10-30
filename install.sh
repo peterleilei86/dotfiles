@@ -23,12 +23,8 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 echo ➡️  Downloading git open plugin...
 git clone https://github.com/paulirish/git-open.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/git-open
 
-echo ➡️  Downloading Starship...
-sh -c "$(curl -fsSL https://starship.rs/install.sh)" < <(echo exit) || fail
-
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ls -sf ~/dotfiles/.config ~/.config
 
 echo 🍻 Enjoy your fresh new zsh terminal! 🍻
 

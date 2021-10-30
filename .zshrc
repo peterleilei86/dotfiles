@@ -126,13 +126,10 @@ if [ -e /Users/peterwang/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/pete
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-if [ $SPIN ]; then
-  export STARSHIP_CONFIG=/home/spin/.config/starship.toml
-else
+if ! [ $SPIN ]; then
   export STARSHIP_CONFIG=~/.config/starship.toml
+
+  eval "$(starship init zsh)"
 fi
-
-
-eval "$(starship init zsh)"
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
