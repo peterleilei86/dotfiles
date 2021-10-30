@@ -24,7 +24,7 @@ echo ➡️  Downloading git open plugin...
 git clone https://github.com/paulirish/git-open.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/git-open
 
 echo ➡️  Downloading Starship...
-curl -fsSL https://starship.rs/install.sh | zsh
+sudo brew install starship
 
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
