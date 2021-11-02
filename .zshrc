@@ -5,6 +5,7 @@
 # Path to your oh-my-zsh installation.
 if [ $SPIN ]; then
   export ZSH="/home/spin/.oh-my-zsh"
+  alias gstore="git config credential.helper store"
 else
   export ZSH="/Users/peterwang/.oh-my-zsh"
 fi
