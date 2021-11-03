@@ -1,10 +1,6 @@
-[credential]
-	helper =
-	helper = store --file /opt/dev/var/private/git_credential_store
 [user]
 	name = Peter Wang
 	email = peter.wang@shopify.com
-	username = peterleilei86
 [core]
 	commitGraph = true
 	editor = code --wait
