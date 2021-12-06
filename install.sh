@@ -8,7 +8,7 @@ function fail() {
 echo ℹ️ Install directory is $(echo ~)
 
 echo ➡️  Downloading and installing Oh-My-Zsh! ...
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" < <(echo exit) || fail
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 source ~/.zshrc
 
 echo ➡️  Downloading Synthax Highlighting plugin...
