@@ -7,7 +7,7 @@ if [ $SPIN ]; then
   export ZSH="/home/spin/.oh-my-zsh"
   alias gstore="git config credential.helper store"
 else
-  export ZSH="/Users/peterwang/.oh-my-zsh"
+  export ZSH="$HOME/.oh-my-zsh"
 fi
 
 # Set name of the theme to load --- if set to "random", it will
@@ -122,8 +122,16 @@ alias duds="dev u && dev s"
 alias dddu="dev down && dev up"
 alias dr="dev reset-railgun"
 
+#spin
+alias sl="spin list"
+alias so="spin open"
+alias sc="spin code"
+alias shh="spin shell"
+alias st="spin tunnel"
+
+
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-if [ -e /Users/peterwang/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/peterwang/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
