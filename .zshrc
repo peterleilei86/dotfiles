@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z node nvm yarn git-open zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git z node npm nvm yarn git-open zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,9 +125,13 @@ alias dr="dev reset-railgun"
 #spin
 alias sl="spin list"
 alias so="spin open"
-alias sc="spin code"
+alias sd="spin destroy"
+alias spc="spin code"
 alias shh="spin shell"
 alias st="spin tunnel"
+
+#Shopify-dev
+alias ru="rake graphql_api_parser:update_now"
 
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
@@ -142,3 +146,6 @@ if ! [ $SPIN ]; then
 fi
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+
+# Npm global
+export PATH=~/.npm-global/bin:$PATH
