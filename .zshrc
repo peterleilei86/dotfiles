@@ -131,7 +131,7 @@ alias shh="spin shell"
 alias st="spin tunnel"
 
 #spin alias for extensions
-alias scp="spin up partners --name="
+alias scp="spin up partners"
 
 # Bootstrap aliases
 alias eab="bin/rails extensions:apps:bootstrap"
