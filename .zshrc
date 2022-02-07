@@ -130,6 +130,9 @@ alias spc="spin code"
 alias shh="spin shell"
 alias st="spin tunnel"
 
+#spin alias for extensions
+alias scp="spin create partners --name="
+
 #Shopify-dev
 alias ru="rake graphql_api_parser:update_now"
 
