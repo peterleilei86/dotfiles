@@ -133,6 +133,9 @@ alias st="spin tunnel"
 #spin alias for extensions
 alias scp="spin up partners --name="
 
+# Bootstrap aliases
+alias eab="bin/rails extensions:apps:bootstrap"
+
 #Shopify-dev
 alias ru="rake graphql_api_parser:update_now"
 
