@@ -121,6 +121,7 @@ alias ds="dev s"
 alias duds="dev u && dev s"
 alias dddu="dev down && dev up"
 alias dr="dev reset-railgun"
+alias gsdp="bin/rails graphql:schema:dump"
 
 #spin
 alias sl="spin list"
