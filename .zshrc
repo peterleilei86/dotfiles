@@ -132,7 +132,11 @@ alias shh="spin shell"
 alias st="spin tunnel"
 
 #spin alias for extensions
-alias scp="spin up partners"
+alias sup="spin up partners"
+alias sue="spin up extensions --name "
+
+# Shopify-cli
+alias shopifyls='SHOPIFY_CLI_DEVELOPMENT=1 SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 $PWD/bin/shopify'
 
 # Bootstrap aliases
 alias eab="bin/rails extensions:apps:bootstrap"
@@ -156,3 +160,5 @@ fi
 
 # Npm global
 export PATH=~/.npm-global/bin:$PATH
+
+[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
