@@ -135,6 +135,12 @@ alias st="spin tunnel"
 alias sup="spin up partners"
 alias sue="spin up extensions --name "
 
+#spin alias for self serve
+alias suss="spin up customer-account-web --name "
+alias shpl="rake dev:shop:change_plan PLAN=shopify_plus SHOP_ID=1"
+alias b2b="rake dev:betas:enable SHOP_ID=1 BETA=b2b_enabled"
+alias ca="rake dev:customer_accounts:enable SHOP_ID=1"
+
 # Shopify-cli
 alias shopifyls='SHOPIFY_CLI_DEVELOPMENT=1 SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 $PWD/bin/shopify'
 
