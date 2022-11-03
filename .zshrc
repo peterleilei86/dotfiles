@@ -124,7 +124,7 @@ alias dr="dev reset-railgun"
 alias gsdp="bin/rails graphql:schema:dump"
 
 #spin
-alias sl="spin list"
+alias sl="spin list -o name,status,age"
 alias so="spin open"
 alias sd="spin destroy"
 alias spc="spin code"
