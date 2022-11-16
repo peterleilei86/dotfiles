@@ -137,6 +137,7 @@ alias sue="spin up extensions --name "
 
 #spin alias for self serve
 alias suss="spin up customer-account-web --name "
+alias sussbb="spin up customer-account-web:b2b --name "
 alias shpl="rake dev:shop:change_plan PLAN=shopify_plus SHOP_ID=1"
 alias b2b="rake dev:betas:enable SHOP_ID=1 BETA=b2b_enabled"
 alias ca="rake dev:customer_accounts:enable SHOP_ID=1"
