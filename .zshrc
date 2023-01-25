@@ -143,7 +143,7 @@ alias b2b="rake dev:betas:enable SHOP_ID=1 BETA=b2b_enabled"
 alias ca="rake dev:customer_accounts:enable SHOP_ID=1"
 
 #spin alias for customer account extensibility
-alias susse="spin up customer-accounts-ui-extension-dev -c partners branch=safi1012/constellation-full-partner-setup -n full-partner-setup --name "
+alias susse="spin up customer-accounts-ui-extension-dev -c partners.branch=safi1012/constellation-full-partner-setup -n "
 
 # Shopify-cli
 alias shopifyls='SHOPIFY_CLI_DEVELOPMENT=1 SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 $PWD/bin/shopify'
